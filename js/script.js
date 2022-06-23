@@ -53,7 +53,7 @@ function clickLetras(event) {
     const teclaPulsadaEnMayuscula = teclaPulsada.innerHTML.toUpperCase();
     const palabraEnMayuscula = palabra.toUpperCase();
 
-    let hayAcierto = false; //asumo ue el jugador no adivino la letra
+    let hayAcierto = false; //asumo que el jugador no adivino la letra
 
     for (let i = 0; i < palabraEnMayuscula.length; i++) {
         if (teclaPulsadaEnMayuscula == palabraEnMayuscula[i]) {
