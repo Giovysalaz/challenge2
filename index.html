@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ahorcado</title>
+  </head>
+  <body>
+    <header>
+      <img id="logoAlura" src="images/logoAlura.png" />
+      <h1>JUEGO DEL AHORCADO</h1>
+    </header>
+
+    <main>
+      <!--LIENZO DE DISEÑO-->
+      <div id="div-lienzo-canvas">
+        <canvas id="canvas" width="300px" height="400px"> </canvas>
+      </div>
+      <!--INICIAR JUEGO-->
+      <div id="div-iniciar-juego">
+        <button id="botonIniciarJuego" onclick="mostrarPantallaJugarAhorcado()">
+          Iniciar juego
+        </button>
+        <button
+          id="botonAgregarNuevaPalabra"
+          onclick="mostrarPantallaIngresarPalabra()"
+        >
+          Agregar nueva palabra
+        </button>
+      </div>
+
+      <!--INGRESAR PALABRA-->
+      <div id="div-ingresar-palabra">
+        <div>
+          <input
+            type="text"
+            id="ingresarPalabra"
+            placeholder="Ingresar palabra..."
+            pattern="^[A-Za-z]+$"
+            minlength="4"
+            maxlength="15"
+            size="17"
+          />
+        </div>
+        <div>
+          <label id="info">&#9432; Min. de 4 letras y max. de 15 letras.</label>
+        </div>
+        <div id="div-botones-ingresar-palabra">
+          <button
+            id="botonGuardarEmpezar"
+            onclick="guardarPalabraMostrarPantallaJugarAhorcado()"
+          >
+            Guardar y empezar
+          </button>
+          <button id="botonCancelar" onclick="mostrarPantallaIniciarJuego()">
+            Cancelar
+          </button>
+        </div>
+      </div>
+
+      <!--JUEGO DEL AHORCADO-->
+      <div id="div-jugar-ahorcado">
+        <p id="mensajeGP"></p>
+        <p id="palabraAdivinar"></p>
+
+        <div id="botonLetras">
+          <button>A</button>
+          <button>B</button>
+          <button>C</button>
+          <button>D</button>
+          <button>E</button>
+          <button>F</button>
+          <button>G</button>
+          <button>H</button>
+          <button>I</button>
+          <button>J</button>
+          <button>K</button>
+          <button>L</button>
+          <button>M</button>
+          <button>N</button>
+          <button>Ñ</button>
+          <button>O</button>
+          <button>P</button>
+          <button>Q</button>
+          <button>R</button>
+          <button>S</button>
+          <button>T</button>
+          <button>U</button>
+          <button>V</button>
+          <button>W</button>
+          <button>X</button>
+          <button>Y</button>
+          <button>Z</button>
+        </div>
+
+        <div id="botonesDeJuego">
+          <button id="botonObtenerPalabra" onclick="obtenerPalabraSecreta()">
+            Obtener Palabra
+          </button>
+          <button
+            id="botonAbandonarJuego"
+            onclick="mostrarPantallaIniciarJuego()"
+          >
+            Abandonar Juego
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contacto">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/giovanna-salazar-b-644523231"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Giovysalaz" target="_blank"
+              ><i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">
+        &copy Copyright Giovanna Salazar - Chile - Alura 2022.-
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
