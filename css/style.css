@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: #f3f5fc;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Press Start 2P", cursive;
+  color: #0a3871;
+}
+
+#logoAlura {
+  position: absolute;
+  margin: 0px 40px 40px 40px;
+}
+
+#canvas {
+  padding: 0;
+  margin: auto;
+  display: block;
+}
+
+.oculto {
+  display: none;
+}
+
+#imagenAhorcado {
+  padding: 10px;
+}
+
+#mensajeGP {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  padding: auto;
+}
+
+#palabraAdivinar {
+  position: relative;
+  text-align: center;
+  height: 40px;
+  padding: auto;
+}
+
+#palabraAdivinar span {
+  vertical-align: bottom;
+  font-size: 40px;
+  border-bottom: 2px solid #0a3871;
+  width: 50px;
+  text-align: center;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+#botonLetras {
+  position: relative;
+  padding: 40px 280px 40px 280px;
+  text-align: center;
+}
+
+#botonLetras button {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  margin: 9px 9px;
+  text-align: center;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  color: #0a3871;
+  font-weight: bold;
+}
+
+#botonLetras button:hover {
+  color: lime;
+  text-decoration: none;
+}
+
+#botonesDeJuego {
+  position: relative;
+  text-align: center;
+}
+
+#botonObtenerPalabra,
+#botonAbandonarJuego {
+  padding: 24px;
+  width: 332px;
+  height: 67px;
+  border-radius: 9px;
+  background-color: #0a3871;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #f3f5fc;
+}
+
+#div-botones-ingresar-palabra {
+  position: relative;
+  text-align: center;
+}
+
+#botonGuardarEmpezar {
+  padding: 24px;
+  gap: 8px;
+  width: 332px;
+  height: 67px;
+  background: #0a3871;
+  border-radius: 24px;
+  top: 725px;
+  color: #f3f5fc;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#botonCancelar {
+  padding: 24px;
+  gap: 8px;
+  width: 332px;
+  height: 67px;
+  background: #f3f5fc;
+  border-radius: 24px;
+  top: 725px;
+  color: #0a3871;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#ingresarPalabra {
+  background-color: #f3f5fc;
+  position: absolute;
+  outline: none;
+  border: 0px;
+  left: 350px;
+  top: 180px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #0a3871;
+}
+
+#info {
+  position: absolute;
+  left: 350px;
+  top: 420px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+#div-iniciar-juego {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#botonIniciarJuego {
+  position: absolute;
+  padding: 24px;
+  gap: 8px;
+  width: 317px;
+  height: 114px;
+  transform: translateX(-50%);
+  background: #0a3871;
+  border-radius: 24px;
+  top: 257px;
+  color: #f3f5fc;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+#botonAgregarNuevaPalabra {
+  position: absolute;
+  padding: 24px;
+  gap: 8px;
+  width: 280px;
+  height: 67px;
+  transform: translateX(-50%);
+  background: #f3f5fc;
+  border-radius: 24px;
+  top: 404px;
+  color: #0a3871;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+#div-jugar-ahorcado {
+  padding-bottom: 30px;
+}
+#div-ingresar-palabra {
+  padding-bottom: 30px;
+}
+
+/*Footer*/
+.contacto {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.contacto li a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 35px;
+  color: rgb(110, 64, 64);
+}
+
+.contacto li {
+  display: inline;
+  margin: 0 0 0 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+}
+
+.contacto {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.contacto li a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 35px;
+  color: rgb(0, 119, 181);
+}
+
+.contacto li {
+  display: inline;
+  margin: 0 0 0 25px;
+}
+
+.copyright {
+  font-size: 13px;
+  margin: 20px;
+}
